@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 style="text-align: center;">Registered User List</h2>
+
+    
+    
+
+
+
+    <br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+
+        <tbody id="userList"></tbody>
+    </table>
+
+
+
+    <!-- Add User Button -->
+
+    <a href="index.html">
+        <button class="add-user">Add User</button>
+    </a>
+
+
+    <script>
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+        let table = document.getElementById("userList");
+
+        users.forEach(user => {
+            table.innerHTML += `
+                <tr>
+                    <td>${user.name}</td>
+                    <td>${user.email}</td>
+                    <td>${user.password}</td>
+                </tr>
+            `;
+        });
+    </script>
+
+</body>
+</html>
