@@ -1,0 +1,39 @@
+
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Sidebar */
+
+        .sidebar{
+            height: 100vh;
+            background-color: #212529;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+        }
+
+        /* Main */
+
+        .main{
+            padding: 20px;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+
+        /* Cards */
+
+        .card-box{
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
