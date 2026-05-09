@@ -1,0 +1,39 @@
+body{
+    font-family: Arial;
+    background-color: wheat;
+    text-align: center;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: black;
+    border-radius: 20px;
+}
+h3{
+    text-shadow: 2px 2px 5px gray;
+     animation: zoom 2s infinite;
+}
+
+h3.hover{
+    
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(2.0);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
