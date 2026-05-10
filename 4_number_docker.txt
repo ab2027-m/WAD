@@ -1,0 +1,28 @@
+-----------------------------------------Install------------------------------------------------------------------
+
+sudo apt install docker.io
+docker -v
+
+
+
+---------------------------------------------Image------------------------------------------------------------------------
+
+sudo docker images
+sudo docker pull python
+
+
+sudo docker image rmi *ID*
+
+
+
+--------------------------------------------Container--------------------------------------------------------------------
+
+sudo docker ps
+sudo docker run -d --name py -it -d python
+sudo docker exec -it py python3
+
+
+sudo docker stop *container ID*
+sudo docker container rm *Container ID*
+
+
